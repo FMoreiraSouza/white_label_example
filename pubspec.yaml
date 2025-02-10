@@ -60,7 +60,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-  # Irei mudar essa estrutura de diretórios
+  # Irei analisar se mudo essa estrutura de diretórios
     - assets/flutter/images/flutter.png
     - assets/flutter/configs/config.json
     - assets/flutter_mascot/images/flutter_mascot.png
