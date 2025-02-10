@@ -9,13 +9,12 @@
                 }
             },
             "type": "shell",
-            "command": "flutter",
+            "command": "dart",
             "args": [
-                "pub",
                 "run",
                 "flutter_launcher_icons",
                 "-f",
-                "assets/flutter_brand/configs/icon_flutter.yaml"
+                "assets/flutter/configs/icon_flutter.yaml"
             ],
             "group": {
                 "kind": "build",
@@ -31,13 +30,12 @@
                 }
             },
             "type": "shell",
-            "command": "flutter",
+            "command": "dart",
             "args": [
-                "pub",
                 "run",
                 "flutter_launcher_icons",
                 "-f",
-                "assets/flutter_mascot_brand/configs/icon_flutter_mascot.yaml"
+                "assets/flutter_mascot/configs/icon_flutter_mascot.yaml"
             ],
             "group": {
                 "kind": "build",
