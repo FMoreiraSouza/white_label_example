@@ -15,7 +15,7 @@ class BrandConfig {
   });
 
   static Future<BrandConfig> loadBrandConfig(String brand) async {
-    final jsonString = await rootBundle.loadString('assets/brands/$brand/config.json');
+    final jsonString = await rootBundle.loadString('assets/$brand/configs/config.json');
     final jsonMap = json.decode(jsonString);
 
     return BrandConfig(

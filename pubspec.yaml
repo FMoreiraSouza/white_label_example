@@ -48,11 +48,7 @@ dev_dependencies:
   flutter_lints: ^5.0.0
 
 # For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
-
-flutter_launcher_icons:
-  android: true
-  ios: true    
+# following page: https://dart.dev/tools/pub/pubspec   
 
 # The following section is specific to Flutter packages.
 flutter:
@@ -64,8 +60,8 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/brands/flutter_brand/flutter.png
-    - assets/brands/flutter_mascot_brand/flutter_mascot.png
+    - assets/flutter_brand/images/flutter.png
+    - assets/flutter_mascot_brand/images/flutter_mascot.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

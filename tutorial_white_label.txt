@@ -1,0 +1,30 @@
+﻿Instruções para execução, depuração e geração de apk via flavors
+
+Execução e Depuração
+1. Ao clicar para executar ou depurar o aplicativo, abrirá um Terminal de Execução ou Debug Console,
+respectivamente, que fará as seguintes operações:
+    1. Geração de ícone do aplicativo (definido em assets/{flavor_brand}/icon_{selected_flavor_name}.yaml);
+    2. Execução ou Depuração de acordo então com o .json executado.
+
+2. Execução de flavors conforme modos de execução:
+
+    Modo run (tasks.json) 
+        1. Instalar a extensão Tasks para poder visualizar os botões referentes a cada empresa;
+        2. Clicar no botão com ícone de Play, localizado ao lado do botão de branch na barra de status;
+        3. Para hot reload digitar 'r' no Terminal de Execução;                
+        4. Para hot restart digitar 'R' no Terminal de Execução.                  
+
+    Modo debug (launch.json)
+        1. Assim que abrir um projeto configurado com as flavors no Visual Studio Code, os botões
+           não estão diretamente visíveis (na maioria dos casos);
+        2. Ir no painel lateral esquerdo e clicar no botão Run and Debug ou utilizar
+           as teclas de atalho Ctrl + Shift + D e no menu suspenso escolher o Debug da flavor desejada;
+        3. Clicar no ícone de Play situado a esquerda da opção escolhida;
+        4. A partir de então o botão selecionado com o ícone de Play + Debug aparecerá;
+           na barra de status;
+        5. Nas próximas depurações apenas clicar no botão em questão que aparecerá as flavors
+           possíveis de depuração no menu suspenso localizado na barra de pesquisa 
+           centralizada do Visual Studio Code e clicar na flavor de depuração desejada.
+
+Gerar APK
+   Abrir o terminal e digitar o comando: flutter build apk --flavor {desired-flavor-name}.

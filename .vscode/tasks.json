@@ -1,0 +1,81 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Generate Icons for Flutter",
+            "options": {
+                "statusbar": {
+                    "hide": true
+                }
+            },
+            "type": "shell",
+            "command": "flutter",
+            "args": [
+                "pub",
+                "run",
+                "flutter_launcher_icons",
+                "-f",
+                "assets/flutter_brand/configs/icon_flutter.yaml"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Generate Icons for Flutter Mascot",
+            "options": {
+                "statusbar": {
+                    "hide": true
+                }
+            },
+            "type": "shell",
+            "command": "flutter",
+            "args": [
+                "pub",
+                "run",
+                "flutter_launcher_icons",
+                "-f",
+                "assets/flutter_mascot_brand/configs/icon_flutter_mascot.yaml"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run Flutter",
+            "dependsOn": "Generate Icons for Flutter",
+            "type": "shell",
+            "command": "flutter",
+            "args": [
+                "run",
+                "--flavor=flutter",
+                "--dart-define=FLAVOR=flutter"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run Flutter Mascot",
+            "dependsOn": "Generate Icons for Flutter Mascot",
+            "type": "shell",
+            "command": "flutter",
+            "args": [
+                "run",
+                "--flavor=flutter_mascot",
+                "--dart-define=FLAVOR=flutter_mascot"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": []
+        }
+    ]
+}
