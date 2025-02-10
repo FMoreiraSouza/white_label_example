@@ -3,7 +3,7 @@
 Execução e Depuração
 1. Ao clicar para executar ou depurar o aplicativo, abrirá um Terminal de Execução ou Debug Console,
 respectivamente, que fará as seguintes operações:
-    1. Geração de ícone do aplicativo (definido em assets/{flavor_brand}/icon_{selected_flavor_name}.yaml);
+    1. Geração de ícone do aplicativo (definido em assets/{flavor}/icon_{selected_flavor_name}.yaml);
     2. Execução ou Depuração de acordo então com o .json executado.
 
 2. Execução de flavors conforme modos de execução:
