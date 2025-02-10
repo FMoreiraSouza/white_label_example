@@ -50,6 +50,10 @@ dev_dependencies:
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
+flutter_launcher_icons:
+  android: true
+  ios: true    
+
 # The following section is specific to Flutter packages.
 flutter:
 
@@ -58,22 +62,10 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
-flutter_icons:
-  android: true
-  ios: true
-  image_path: "assets/brands/flutter_brand/flutter.png"
-  adaptive_icon_foreground: "assets/brands/flutter_brand/flutter.png"
-
-# flutter_native_splash:
-#   image: "assets/brands/flutter_brand/image_name.png"
-#   color: "#FFFFFF"
-
-
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/brands/flutter_brand/flutter.png
-    - assets/brands/flutter_brand/flutter_mascot.png
-    - assets/brands/$brand/config.json
+    - assets/brands/flutter_mascot_brand/flutter_mascot.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

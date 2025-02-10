@@ -5,7 +5,11 @@ import 'package:white_label_example/config/flavor_config.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  final brandConfig = await BrandConfig.loadBrandConfig("flutter_brand");
+  // Use o sabor para decidir qual configuração carregar
+  final String flavor =
+      const String.fromEnvironment('FLAVOR', defaultValue: 'flutter'); // Obtém o sabor via ambiente
+
+  final brandConfig = await BrandConfig.loadBrandConfig(flavor);
 
   FlavorConfig.setBrand(brandConfig);
 
